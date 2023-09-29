@@ -1,0 +1,641 @@
+    @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@600&family=Inter&family=Montserrat&family=Poppins:ital@0;1&family=Rubik:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@200&family=Athiti:wght@300;500;600&family=Inter&family=Montserrat&family=Poppins:ital@0;1&family=Rubik:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@200&family=Athiti:wght@300&family=Inter&family=Montserrat&family=Poppins:ital@0;1&family=Rubik:wght@500&display=swap');
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    hr {
+        border-color: rgb(99, 96, 96)7;
+    }
+
+    p {
+        font-family: Roboto, Arial, sans-serif;
+    }
+
+    .navbar-title {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        font-size: large;
+    }
+
+    .label {
+        grid-area: nav;
+        font-family: 'Athiti', sans-serif;
+
+    }
+
+    .start {
+        grid-area: start;
+    }
+
+    .end {
+        grid-area: end;
+    }
+
+    .space {
+        grid-area: s[ace];
+    }
+
+    .nav-items {
+        grid-area: items;
+        color: white;
+        padding-right: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end
+    }
+
+    .nav-dropdown {
+        grid-area: drop;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        justify-content: flex-start;
+    }
+
+    .nav {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-areas:
+            'start nav nav nav nav items drop';
+        gap: 10px;
+        background-color: #06002E;
+    }
+
+    .material-symbols-outlined {
+        padding-right: 20px;
+        cursor: pointer;
+    }
+
+    .material-symbols-outlined:hover {
+        color: rgb(164, 203, 240);
+    }
+
+    .nav-icon {
+        color: white;
+    }
+
+    .dropbtn {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        background-color: #ffffff00;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        right: 0;
+        left: 0;
+    }
+
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+    .dropdown:hover .dropbtn {
+        border-color: rgb(175, 175, 175);
+    }
+
+    .logo {
+        height: 32px;
+        width: 32px;
+    }
+
+    .avatar {
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+    }
+
+    .nav-avatar {
+        padding-right: 10px;
+        padding-left: 20px;
+    }
+
+    .lg-avatar {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+
+
+    /************************************************/
+    .title {
+        grid-area: title;
+        font-size: 32px;
+        font-weight: lighterweight;
+        font-family: Roboto, Arial, sans-serif;
+        font-family: 'Anek Devanagari', sans-serif;
+    }
+
+    .card {
+        margin-top: 1%;
+        grid-area: card;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 60%;
+        border-radius: 5px;
+    }
+
+    /*Form Grid*/
+    .question-form {
+        padding-top: 5%;
+        grid-template-areas:
+            'start title title title title title end'
+            'start card card card card card end';
+        display: grid;
+        gap: 10px;
+    }
+
+    .container {
+        padding: 2px 100px;
+    }
+
+    .form-input,
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 20px;
+    }
+
+    .form-area,
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    .form-area {
+        resize: vertical;
+        margin-bottom: 3%;
+        height: 250px;
+        font-family: Roboto, Arial, sans-serif;
+    }
+
+    .form-input {
+        margin-top: 5%;
+        height: 60px;
+        font-family: Roboto, Arial, sans-serif;
+    }
+
+    /************************************************/
+
+    .form-submit {
+        background-color: #458bdb;
+        border-radius: 24px;
+        border-style: none;
+        box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+        color: #ececec;
+        cursor: pointer;
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        height: 48px;
+        justify-content: center;
+        max-width: 100%;
+        padding: 2px 24px;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .form-submit:hover {
+        background: #F6F9FE;
+        color: #174ea6;
+    }
+
+    .form-submit:active {
+        box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+        outline: none;
+    }
+
+    .form-submit:focus {
+        outline: none;
+        border: 2px solid #4285f4;
+    }
+
+    /************************************************/
+    .management-body {
+        padding-top: 5%;
+        grid-template-areas:
+            'start title title title title title end';
+        display: grid;
+        gap: 10px;
+    }
+
+    .management-section2 {
+        padding-top: 0%;
+        grid-template-areas:
+            'start user user question question question end';
+        grid-template-columns: repeat(7, 2fr);
+
+        display: grid;
+        gap: 10px;
+        margin-bottom: 10%;
+    }
+
+    .user-profile {
+        padding-top: 15%;
+        text-align: center;
+        grid-area: user;
+        display: flex;
+        justify-content: flex-start
+    }
+
+    .questions {
+        grid-area: question;
+        padding-top: 10%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .accordion {
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+        color: #7c7c7c;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 20px;
+        transition: 0.4s;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1%;
+    }
+
+
+    .active,
+    .accordion:hover {
+        background-color: #ccc;
+    }
+
+    .panel {
+        padding: 0 18px;
+        /*visibility: hidden;*/
+        display: none;
+        background-color: white;
+        overflow-wrap: break-word;
+        height: 30vh;
+        overflow-y: scroll;
+
+    }
+
+    .user-icon {
+        height: 32px;
+        padding-right: 2%;
+    }
+
+    .user-info {
+        display: flex;
+        align-items: center;
+        color: rgb(133, 133, 133);
+    }
+
+    .date {
+        color: rgb(133, 133, 133);
+        font-size: small;
+    }
+
+    .answers {
+        border-left: #9e9e9e;
+        border-style: solid;
+        border-top: none;
+        border-right: none;
+        border-bottom: none;
+        padding-left: 2%;
+        margin-bottom: 3%;
+    }
+
+    .right-arrow {
+        padding-right: 0%;
+    }
+
+    /************************************************/
+    .jumbotron {
+        grid-template-areas:
+            'start space jumboTitle jumboTitle image end end';
+        display: grid;
+        gap: 10px;
+        background-color: #CFD8EF;
+        height: 500px;
+        margin-bottom: 3%;
+    }
+
+    .landing-image {
+        grid-area: image;
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 10%;
+    }
+
+
+    .jumbotron-title {
+        grid-area: jumboTitle;
+        font-family: 'Athiti', sans-serif;
+        color: white;
+        font-size: 45px;
+        line-height: 200%;
+        font-weight: 300;
+        margin-top: 3%;
+    }
+
+    .sign-up {
+        padding-top: -20%;
+        background-color: white;
+        color: #061BB0;
+        height: 60px;
+        width: 150px;
+        border: none;
+        font-size: 20px;
+    }
+
+    .sign-up:hover {
+        background-color: #423983;
+        color: white;
+        cursor: pointer;
+    }
+
+    .recentQuestions {
+        grid-template-areas:
+            'start start ques ques ques end end';
+        display: grid;
+        gap: 10px;
+        height: 500px;
+        margin-bottom: -10%;
+    }
+
+
+    .question-card {
+        margin-top: 5%;
+        grid-area: ques;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        justify-self: center;
+        padding: 20px;
+    }
+
+    /************************************************/
+    .login {
+        padding-top: 10%;
+        grid-template-areas:
+            'start start log log end end';
+        display: grid;
+        gap: 10px;
+    }
+
+    .login-card {
+        margin-top: 1%;
+        grid-area: log;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 35vh;
+        height: 55vh;
+        border-radius: 5px;
+        justify-self: center;
+        justify-content: center;
+
+        padding: 20px;
+    }
+
+    .login-title {
+        font-family: Roboto, Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .form-logo {
+
+        height: 80px;
+    }
+
+    .img-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .login-form-input {
+        height: 40px;
+        font-family: Roboto, Arial, sans-serif;
+    }
+
+    .login-form-input,
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+        margin-bottom: 5%;
+    }
+
+    .login-button {
+        background-color: #3972ce;
+        color: white;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        height: 45px;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .login-button:hover {
+        background-color: #2958a5;
+    }
+
+    /************************************************/
+    .signin {
+        padding-top: 10%;
+        grid-template-areas:
+            'start start sign sign end end';
+        display: grid;
+        gap: 10px;
+        margin-bottom: 10%;
+    }
+
+    .signin-card {
+        margin-top: 1%;
+        grid-area: sign;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 60vh;
+        border-radius: 5px;
+        justify-self: center;
+        justify-content: center;
+
+        padding: 20px;
+    }
+
+    .signin-title {
+        font-family: Roboto, Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        color: #4d4c4c;
+    }
+
+    .drop-container {
+        position: relative;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px dashed #555;
+        color: #444;
+        cursor: pointer;
+        transition: background .2s ease-in-out, border .2s ease-in-out;
+    }
+
+    .drop-container:hover {
+        background: #eee;
+        border-color: #111;
+    }
+
+    .drop-container:hover .drop-title {
+        color: #222;
+    }
+
+    .drop-title {
+        color: #444;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        transition: color .2s ease-in-out;
+    }
+
+    .drop-container.drag-active {
+        background: #eee;
+        border-color: #111;
+    }
+
+    .drop-container.drag-active .drop-title {
+        color: #222;
+    }
+
+    input[type=file]::file-selector-button {
+        margin-right: 20px;
+        border: none;
+        background: #084cdf;
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        transition: background .2s ease-in-out;
+    }
+
+    input[type=file]::file-selector-button:hover {
+        background: #0d45a5;
+    }
+
+    .pass {
+        margin-top: 5%;
+    }
+
+    .passdiv {
+        margin-top: 15%;
+    }
+
+    /************************************************/
+    .detail-section {
+        margin-top:5%;
+        grid-template-areas:
+            'start quesCard quesCard quesCard quesCard end';
+        display: grid;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 5%;
+    }
+
+    .question-card {
+        margin-top: 5%;
+        grid-area: quesCard;
+    }
+
+    .detail{
+        width: 100vh;
+    }
+
+    .answer-input{
+        width: 100%;
+        margin-bottom: 3%;
+        height: 50px;
+        border-radius: 7px;
+        padding:3%;
+    }
+
+    .comment{
+        font-size: 15px;
+        color: grey;
+        margin-bottom: 0.5%;
+        margin-top: 5%;
+    }
+    .username{
+        color: #061BB0;
+    }
