@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Question Details</title>
@@ -12,49 +12,49 @@
 
 <body>
     <!--Navbar Section-->
-    <div class="nav">
-        <div class="label">
-            <apan class="navbar-title" href="#">
-                <img class="logo"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" />
-                &nbsp; Query
-                </span>
-        </div>
-        <div class="nav-items">
-            <a class="nav-icon" href="./Home.html">
-                <span class="material-symbols-outlined">
-                    other_houses
-                </span>
-            </a>
-            <a class="nav-icon" href="./CreateQuestion.html">
-                <span class="material-symbols-outlined">
-                    add
-                </span>
-            </a>
-        </div>
-        <!---Replace with variable username-->
-        <div class="nav-dropdown">
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <div class="nav-avatar">
-                        <img class="avatar" src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png"
-                            alt="Avatar">
-                    </div>
-                    Username
-                    <span class="material-symbols-outlined">
-                        expand_more
-                    </span>
-                </button>
-                <div class="dropdown-content">
-                    <a href="./QuestionMangagement.html">Manage Questions</a>
-                    <a href="#">Log out</a>
+ <!--Navbar Section-->
+ <div class="nav">
+    <div class="label">
+        <span class="navbar-title">
+            <img class="logo" src="./images/queryIcon.png" alt="Logo" />
+            &nbsp; Query
+            </span>
+    </div>
+    <div class="nav-items">
+        <a class="nav-icon" href="./index.html">
+            <span class="material-symbols-outlined">
+                other_houses
+            </span>
+        </a>
+        <a class="nav-icon" href="./CreateQuestion.html">
+            <span class="material-symbols-outlined">
+                add
+            </span>
+        </a>
+    </div>
+    <!---Replace with variable username-->
+    <div class="nav-dropdown">
+        <div class="dropdown">
+            <button class="dropbtn">
+                <div class="nav-avatar">
+                    <img class="avatar" src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png"
+                        alt="Avatar"/>
                 </div>
+                Username
+                <span class="material-symbols-outlined">
+                    expand_more
+                </span>
+            </button>
+            <div class="dropdown-content">
+                <a href="./QuestionManagement.html">Manage Questions</a>
+                <a href="./index.html">Log out</a>
             </div>
         </div>
-
     </div>
 
-    <!---->
+</div>
+
+<!---->
     <div class="detail-section">
 
         <div class="" id="questions">
@@ -64,13 +64,13 @@
                 <p class="date">created at 2023-09-22</p>
                 <p>description of the question goes here</p>
                 <p class="comment">comment as <span class="username">@username</span></p>
-                <textarea class="answer-input"></textarea>
+                <textarea class="answer-input" rows="2" col="20"></textarea>
                 <button class="form-submit">Post</button>
                 <h4>Answers</h4>
                 <hr />
 
                 <div class="row user-info">
-                    <img class="user-icon" src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" />
+                    <img class="user-icon" src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" alt="Avatar"/>
                     @queryUserOne
                     • 2023-09-22
                 </div>
@@ -87,7 +87,7 @@
 
 
                 <div class="row user-info">
-                    <img class="user-icon" src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" />
+                    <img class="user-icon" src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" alt="Avatar"/>
                     @queryUserOne
                     • 2023-09-22
                 </div>

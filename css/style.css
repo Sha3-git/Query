@@ -427,12 +427,56 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         transition: 0.3s;
         width: 100%;
-        height: 200px;
+        height: 220px;
         border-radius: 5px;
         justify-self: center;
         padding: 20px;
     }
 
+    .nav-login-button {
+        background-color: #3972ce;
+        color: white;
+        width: 100px;
+        border-radius: 5px;
+        border: none;
+        height: 45px;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .nav-login-button:hover {
+        background-color: #2958a5;
+    }
+
+    .read-more{
+        margin-top: 2%;
+        color: white;
+        background-color: #3972ce;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        margin-right: 5%;
+    }
+    .read-more:hover {
+        background-color: #2958a5;
+    }
+
+    .ans-count{
+        color: grey;
+    }
+
+    .card-info{
+        display: flex;
+        align-items:self-end;
+    }
+    .chat{
+        color: gray;
+        padding-right: 1%;
+    }
     /************************************************/
     .login {
         padding-top: 10%;
@@ -622,6 +666,7 @@
         height: 50px;
         border-radius: 7px;
         padding:3%;
+        resize: vertical;
     }
 
     .comment{

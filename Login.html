@@ -2,20 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Question</title>
+    <link rel="icon" href="./images/queryIcon.png" />
+    <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
+    <!--I put a simple login here -->
     <div class="login">
         <div class="login-card">
-            <form action="./login page">
+            <form action="./index.html" method="post">
                 <div class="img-section">
-                    <img class="form-logo" src="./images/queryIcon.png" />
+                    <img class="form-logo" src="./images/queryIcon.png" alt="Logo" />
                 </div>
                 <div class="login-title">
                     <h2 class="login-title">Login</h2>
@@ -24,13 +26,11 @@
                 <div><input class="login-form-input" type="text" placeholder="Username" required></input></div>
                 <p>Password</p>
                 <div><input class="login-form-input" type="password" placeholder="Password" required></input></div>
-                <div><button class="login-button">Login</button></div>
-                <p style="font-size: 15px;">Don't have an account? <a href="#">Create one</a></p>
+                <div><button class="login-button" type="submit">Login</button></div>
+                <p class="signup-link">Don't have an account? <a href="./Signup.html">Create one</a></p>
             </form>
         </div>
     </div>
-
-
 </body>
 
 </html>
