@@ -612,12 +612,6 @@
         gap: 10px;
         margin-bottom: 5%;
     }
-
-    .question-card {
-        margin-top: 5%;
-        grid-area: quesCard;
-    }
-
     .detail{
         width: 100vh;
     }
