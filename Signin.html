@@ -2,55 +2,75 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="./images/queryIcon.png" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="text/javascript" src="./js/eventHandlers.js"></script>
 </head>
 
 <body>
     <div class="signin">
         <div class="signin-card">
-            <form action="./index.html">
+            <form action="./index.html" id="signinForm">
                 <div class="img-section">
-                    <img class="form-logo" src="./images/queryIcon.png" alt="Logo"/>
+                    <img class="form-logo" src="./images/queryIcon.png" alt="Logo" />
                 </div>
                 <div class="signin-title">
                     <h2 class="signin-title">Sign Up</h2>
                 </div>
                 <p>Email</p>
-                <div><input class="login-form-input" type="email" placeholder="Email" required></input></div>
+                <div>
+                    <input class="signin-form-input" type="email" placeholder="Email" id="email" required></input>
+                    <div class="error"><span id="email-error"></span></div>
+                </div>
                 <p>Username</p>
-                <div><input class="login-form-input" type="text" placeholder="Username" required></input></div>
+                <div>
+                    <input class="signin-form-input" type="text" placeholder="Username" id="username" required>
+                    <div class="error"><span id="username-error"></span></div>
+                </input>
+                </div>
                 <p>Date Of Birth</p>
-                <div><input class="login-form-input" type="date"  required></input></div>
+                <div>
+                    <input class="signin-form-input" type="date" id="dob" required></input>
+                    <div class="error"><span id="dob-error"></span></div>
+                </div>
                 <p>Upload Avatar</p>
                 <div class="drop-container" id="dropcontainer">
                     <span class="drop-title">Drop files here</span>
                     or
-                    <input type="file" id="images" accept="image/*" required/>
-                  </div>
+                    <input type="file" id="images" accept="image/*" required />
+                </div>
+                <div class="error"><span id="avatar-error"></span></div>
 
-                  <hr class="passdiv"/>
 
-                  <div class="pass">
+                <hr class="passdiv" />
+
+                <div class="pass">
                     <p>Password</p>
-                    <div><input class="login-form-input" type="password"  required></input></div>
+                    <div>
+                        <input class="signin-form-input" type="password" id="password" required></input>
+                        <div class="error"><span id="password-error"></span></div>
+                    </div>
                     <p>Confirm Password</p>
-                    <div><input class="login-form-input" type="password"  required></input></div>
-    
-                  </div>
-                
-                <hr/>
+                    <div>
+                        <input class="signin-form-input" type="password" id="cpassword" required></input>
+                        <div class="error"><span id="cpassword-error"></span></div>
+                    </div>
 
-                <div><button class="login-button">Sign Up</button></div>
-                <p style="font-size: 15px;">Already have an account? <a href="#">Log In</a></p>
+                </div>
+
+                <hr />
+
+                <div><button class="login-button" type="submit">Sign Up</button></div>
+                <p style="font-size: 15px;">Already have an account? <a href="./Login.html">Log In</a></p>
             </form>
         </div>
     </div>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="./js/signinListener.js"></script>
 </body>
 
 </html>
